@@ -46,13 +46,13 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(new HinhAnh("https://kenh14cdn.com/2019/3/30/5552996523744881227864901254380808370651136n-15536720733391270751674-1553963221242603418149.jpg","hot girl11"));
         arrayList.add(new HinhAnh("https://i.pinimg.com/736x/91/06/21/9106217e59456dbc2593f74737f119c6.jpg","hot girl12"));
         arrayList.add(new HinhAnh("http://images.plurk.com/3hGh0LACePTOpxlAWNAA.jpg","hot girl13"));
-        arrayList.add(new HinhAnh("https://2sao.vietnamnetjsc.vn/images/2019/03/26/22/43/u23-viet-nam-06.jpg","hot girl14"));
+        arrayList.add(new HinhAnh("https://2sao.vietnamnetjsc.vn/images/2019/05/25/17/58/tin-sao-viet-ngoc-trinh.jpg","hot girl14"));
         arrayList.add(new HinhAnh("http://afamilycdn.com/2018/11/25/photo-3-15431567235461032558642.jpg","hot girl15"));
         arrayList.add(new HinhAnh("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_aEcDJAN4Viy9dKUgH5j4Bihuyld47UGifzq8eHj_OzfuKy14","hot girl16"));
-//        arrayList.add(new HinhAnh("https://upload.wikimedia.org/wikipedia/commons/d/d3/Midu_-_Summer_2012_%28Explored_1_-_May_24th%29_cropped.jpg","hot girl17"));
-//        arrayList.add(new HinhAnh("https://toplist.vn/images/800px/vung-dat-co-con-gai-xinh-nhat-tai-viet-nam-67017.jpg","hot girl18"));
-//        arrayList.add(new HinhAnh("https://www.hutech.edu.vn/imgnews/ttvhnt/huyen1%285%29.jpg","hot girl19"));
-//        arrayList.add(new HinhAnh("https://photo2.tinhte.vn/data/attachment-files/2018/04/4293477_GirlXinh_Part5_137.jpg","hot girl20"));
+        arrayList.add(new HinhAnh("https://upload.wikimedia.org/wikipedia/commons/d/d3/Midu_-_Summer_2012_%28Explored_1_-_May_24th%29_cropped.jpg","hot girl17"));
+        arrayList.add(new HinhAnh("https://toplist.vn/images/800px/vung-dat-co-con-gai-xinh-nhat-tai-viet-nam-67017.jpg","hot girl18"));
+        arrayList.add(new HinhAnh("https://www.hutech.edu.vn/imgnews/ttvhnt/huyen1%285%29.jpg","hot girl19"));
+        arrayList.add(new HinhAnh("https://photo2.tinhte.vn/data/attachment-files/2018/04/4293477_GirlXinh_Part5_137.jpg","hot girl20"));
 
 //        arrayList.add(new HinhAnh("https://danongonline.com.vn/wp-content/uploads/2018/02/anh-girl-xinh-9-1.jpg","hot girl1"));
 //        arrayList.add(new HinhAnh("https://ss-images.catscdn.vn/2018/06/10/2968571/34689401_2147325555551794_7654281988110548992_n.jpg","hot girl2"));
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 if (!isLoading) {
                     int totalItem = linearLayoutManager.getItemCount();
                     int lastItem = linearLayoutManager.findLastVisibleItemPosition();
-                    int threshHold = 1;
+                    int threshHold = 2;
                     if (linearLayoutManager != null && totalItem <= lastItem + threshHold) {
                         //bottom of list!
                         loadMore();
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
 
                 recyclerViewAdapter.notifyItemRemoved(scrollPosition); // Thông báo khi dữ liệu ở 1 vị trí bị gỡ bỏ
                 int currentSize = scrollPosition;
-                int nextLimit = currentSize + 1;
+                int nextLimit = currentSize + 2;
 
                 while (currentSize - 1 < nextLimit) {
                     arrayList.add(new HinhAnh("https://danongonline.com.vn/wp-content/uploads/2018/02/anh-girl-xinh-9-1.jpg","hot girl1"));
@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                     arrayList.add(new HinhAnh("https://kenh14cdn.com/2019/3/30/5552996523744881227864901254380808370651136n-15536720733391270751674-1553963221242603418149.jpg","hot girl11"));
                     arrayList.add(new HinhAnh("https://i.pinimg.com/736x/91/06/21/9106217e59456dbc2593f74737f119c6.jpg","hot girl12"));
                     arrayList.add(new HinhAnh("http://images.plurk.com/3hGh0LACePTOpxlAWNAA.jpg","hot girl13"));
-                    arrayList.add(new HinhAnh("https://2sao.vietnamnetjsc.vn/images/2019/03/26/22/43/u23-viet-nam-06.jpg","hot girl14"));
+                    arrayList.add(new HinhAnh("https://2sao.vietnamnetjsc.vn/images/2019/05/25/17/58/tin-sao-viet-ngoc-trinh.jpg","hot girl14"));
                     arrayList.add(new HinhAnh("http://afamilycdn.com/2018/11/25/photo-3-15431567235461032558642.jpg","hot girl15"));
                     arrayList.add(new HinhAnh("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_aEcDJAN4Viy9dKUgH5j4Bihuyld47UGifzq8eHj_OzfuKy14","hot girl16"));
                     arrayList.add(new HinhAnh("https://upload.wikimedia.org/wikipedia/commons/d/d3/Midu_-_Summer_2012_%28Explored_1_-_May_24th%29_cropped.jpg","hot girl17"));
